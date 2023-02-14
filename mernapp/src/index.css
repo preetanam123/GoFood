@@ -19,3 +19,9 @@ code {
 #carouselExampleInterval{
   object-fit: contain !important; 
 }
+.carousel-item img {
+  object-fit: contain !important;
+  object-position: center;
+  height: 100%;
+  overflow: hidden;
+}

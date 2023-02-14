@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Carousel() {
   return (
-    <>
+    <div>
     <div className="w-100">
       <div
         id="carouselExampleInterval"
         className="carousel slide"
         data-bs-ride="carousel"
-        style={{objectFit: "contain !important"}}
+        style={{"objectFit" : "contain !important"}}
       >
         <div className="carousel-inner" id="carousel">
           <div className="carousel-caption d-none d-md-block" style={{zIndex: "10"}}>
@@ -28,21 +28,21 @@ export default function Carousel() {
           <div className="carousel-item active" data-bs-interval="10000">
             <img
               src="https://source.unsplash.com/random/300x300?pizza"
-              className="d-block w-100"
+              className="d-block w-90 m-auto"
               alt="..."
             />
           </div>
           <div className="carousel-item" data-bs-interval="2000">
             <img
               src="https://source.unsplash.com/random/300x300?pastry"
-              className="d-block w-100"
+              className="d-block w-90 m-auto"
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
               src="https://source.unsplash.com/random/300x300?burger"
-              className="d-block w-100"
+              className="d-block w-90 m-auto"
               alt="..."
             />
           </div>
@@ -67,6 +67,6 @@ export default function Carousel() {
         </button>
       </div>
       </div>
-    </>
+    </div>
   );
 }
